@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>College Event Management System</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="register.html">Register</a>
+
+        <a href="login.html">User Login</a>
+
+        <a href="admin-login.html">Admin Login</a>
+
+    </nav>
+
+</header>
+
+
+<div class="form-container">
+
+    <h2>Event Registration</h2>
+
+
+    <form
+        id="registrationForm"
+        onsubmit="registerStudent(event)">
+
+
+        <div class="form-group">
+
+            <label>
+                Student Name
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Register Number
+            </label>
+
+            <input
+                type="text"
+                id="regNo"
+                placeholder="Enter register number">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter email">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Select Event
+            </label>
+
+            <select id="eventSelect">
+
+                <option value="">
+                    Select an event
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            type="submit"
+            class="btn">
+
+            Register Now
+
+        </button>
+
+    </form>
+
+
+    <div
+        id="successMessage"
+        class="success">
+
+        Registration successful! 🎉
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 College Event Management System
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

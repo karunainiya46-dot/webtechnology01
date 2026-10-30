@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body onload="checkAdminLogin()">
+
+<header>
+
+    <h1>Admin Dashboard</h1>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="events.html">Events</a>
+
+        <button
+            class="btn"
+            onclick="adminLogout()">
+
+            Logout
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+<div class="container">
+
+    <h2>Manage Events</h2>
+
+
+    <table class="admin-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Event Name</th>
+
+                <th>Date</th>
+
+                <th>Category</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="adminEventList">
+
+        </tbody>
+
+    </table>
+
+
+    <br><br>
+
+
+    <h2>Student Registrations</h2>
+
+
+    <table class="admin-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Student Name</th>
+
+                <th>Register Number</th>
+
+                <th>Email</th>
+
+                <th>Event</th>
+
+                <th>Date</th>
+
+            </tr>
+
+        </thead>
+
+
+        <tbody id="registrationList">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 College Event Management System
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
